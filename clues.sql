@@ -11,7 +11,6 @@ WHERE region = 'Southern Europe'
 ORDER BY population ASC 
 LIMIT 5;
 
---A: Vatican City State
 
 -- Clue #2: Now that we're here, we have insight that Carmen was seen attending 
 -- language classes in this country's officially recognized language. Check our 
@@ -24,7 +23,6 @@ FROM countrylanguage
 WHERE countrycode = 'VAT'
 AND isofficial = True
 
---A; Italian
 
 -- Clue #3: We have new news on the classes Carmen attended – our gumshoes tell us she's moved on to a different country, a country where people speak only the language she was learning. Find out which nearby country speaks nothing but that language.
 
